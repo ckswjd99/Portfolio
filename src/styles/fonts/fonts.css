@@ -1,0 +1,80 @@
+@font-face {
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: 100;
+  src: url("./RobotoSlab-Thin.ttf") format("woff2"),
+    url("./RobotoSlab-Thin.woff") format("woff"),
+    url("./RobotoSlab-Thin.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: 200;
+  src: url("./RobotoSlab-ExtraLight.ttf") format("woff2"),
+    url("./RobotoSlab-ExtraLight.woff") format("woff"),
+    url("./RobotoSlab-ExtraLight.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: 300;
+  src: url("./RobotoSlab-Light.ttf") format("woff2"),
+    url("./RobotoSlab-Light.woff") format("woff"),
+    url("./RobotoSlab-Light.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./RobotoSlab-Regular.ttf") format("woff2"),
+    url("./RobotoSlab-Regular.woff") format("woff"),
+    url("./RobotoSlab-Regular.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: 500;
+  src: url("./RobotoSlab-Medium.ttf") format("woff2"),
+    url("./RobotoSlab-Medium.woff") format("woff"),
+    url("./RobotoSlab-Medium.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: 600;
+  src: url("./RobotoSlab-SemiBold.ttf") format("woff2"),
+    url("./RobotoSlab-SemiBold.woff") format("woff"),
+    url("./RobotoSlab-SemiBold.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: 700;
+  src: url("./RobotoSlab-Bold.ttf") format("woff2"),
+    url("./RobotoSlab-Bold.woff") format("woff"),
+    url("./RobotoSlab-Bold.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: 800;
+  src: url("./RobotoSlab-ExtraBold.ttf") format("woff2"),
+    url("./RobotoSlab-ExtraBold.woff") format("woff"),
+    url("./RobotoSlab-ExtraBold.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: 900;
+  src: url("./RobotoSlab-Black.ttf") format("woff2"),
+    url("./RobotoSlab-Black.woff") format("woff"),
+    url("./RobotoSlab-Black.otf") format("truetype");
+}
