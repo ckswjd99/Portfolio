@@ -1,0 +1,43 @@
+.logoComponent {
+  margin: 0;
+}
+
+.logo {
+  font-family: "Roboto Slab", serif;
+  font-weight: 600;
+
+  display: flex;
+  justify-content: left;
+
+  padding: 10px;
+
+  cursor: pointer;
+}
+
+.cursor {
+  animation: blink-effect 1s step-end infinite;
+}
+
+@keyframes blink-effect {
+  50% {
+    opacity: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .logo {
+    font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .logo {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .logo {
+    font-size: 16px;
+  }
+}

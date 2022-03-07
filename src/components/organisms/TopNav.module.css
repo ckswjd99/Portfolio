@@ -1,0 +1,33 @@
+.topNav {
+  width: 100%;
+
+  border-bottom: 1px solid lightgray;
+
+  display: flex;
+  justify-content: center;
+}
+
+.contentWrapper {
+  display: flex;
+  justify-content: space-between;
+
+  position: relative;
+}
+
+.hidden {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .contentWrapper {
+    width: 768px;
+    flex-direction: row;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contentWrapper {
+    width: 100%;
+    flex-direction: column;
+  }
+}
