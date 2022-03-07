@@ -1,26 +1,15 @@
-import TopNav from './components/organisms/TopNav'
-import MainContent from './components/organisms/MainContent'
-import ImageCaptioned from './components/atoms/ImageCaptioned'
-import { toCareer, toJournals, toProjects } from './utils/pageLinkers'
-import ParagraphWithImage from './components/molecules/ParagraphWithImage'
+import { useState } from "react";
+import CareerPage from "./components/pages/CareerPage";
+import MainPage from "./components/pages/MainPage";
 
 function App() {
-  const menus = {
-    'Career': toCareer,
-    'Projects': toProjects,
-    'Journals': toJournals
-  }
+  const pages = [<MainPage />, <CareerPage />]
+  const [pageNum, setPageNum] = useState(0);
+  const nextPage = () => setPageNum(former => (former + 1) % pages.length)
   return (
     <div>
-      <TopNav menu={menus} />
-      <MainContent>
-        <h1>Hello World!</h1>
-        <p>I'm ChanJeong Park, who develops anything.</p>
-        <h2>Drawing</h2>
-        <ParagraphWithImage src='images/IMG_5750.jpg' caption='ice pretending to be cool'>
-          Hello World! I like drawing.
-        </ParagraphWithImage>
-      </MainContent>
+      <button onClick={nextPage}>Next</button>
+      {pages[pageNum]}
     </div>
   );
 }

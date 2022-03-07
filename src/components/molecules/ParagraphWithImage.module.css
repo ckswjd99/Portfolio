@@ -1,11 +1,17 @@
 .contentWrapper {
   display: flex;
   flex-direction: row;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 .paragraphArea {
   flex: 1;
+}
+.alignLeft {
+  text-align: left;
+}
+.alignRight {
+  text-align: right;
 }
 
 @media screen and (min-width: 768px) {
@@ -18,16 +24,44 @@
   .imageRight {
     flex-direction: row-reverse;
   }
-  .imageArea {
-    width: 30%;
-    margin-right: 10%;
+  .imageAreaSmall {
+    width: 25%;
+  }
+  .imageAreaMedium {
+    width: 35%;
+  }
+  .imageAreaBig {
+    width: 45%;
+  }
+  .imageAreaLeft {
+    margin-right: 7%;
+  }
+  .imageAreaRight {
+    margin-left: 7%;
   }
 }
 
 @media screen and (min-width: 480px) and (max-width: 768px) {
-  .imageArea {
-    width: 45%;
-    margin-right: 10%;
+  .imageLeft {
+    flex-direction: row;
+  }
+  .imageRight {
+    flex-direction: row-reverse;
+  }
+  .imageAreaSmall {
+    width: 182px;
+  }
+  .imageAreaMedium {
+    width: 254px;
+  }
+  .imageAreaBig {
+    width: 327px;
+  }
+  .imageAreaLeft {
+    margin-right: 7%;
+  }
+  .imageAreaRight {
+    margin-left: 7%;
   }
 }
 
@@ -39,10 +73,19 @@
   .imageRight {
     flex-direction: column;
   }
-  .imageArea {
+  .imageAreaLeft,
+  .imageAreaRight {
     width: 75%;
+    margin-bottom: 20px;
   }
   .paragraphArea {
     flex: 1;
+    text-align: center;
+  }
+  .alignLeft {
+    text-align: left;
+  }
+  .alignRight {
+    text-align: right;
   }
 }

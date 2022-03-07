@@ -1,5 +1,5 @@
 import style from './Logo.module.css'
-import { toHome } from '../../utils/pageLinkers'
+import { toHome } from '../pageLinkers'
 
 const Logo = (props) => {
   return (
