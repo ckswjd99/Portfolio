@@ -1,6 +1,7 @@
 .buttonArea {
   font-family: "Roboto Slab", serif;
   font-weight: 300;
+  color: black;
 
   background-color: white;
   border: none;
@@ -22,20 +23,11 @@
   }
 }
 
-@media screen and (min-width: 480px) and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .buttonArea {
     font-size: 18px;
     padding-top: 10px;
     padding-bottom: 10px;
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .buttonArea {
-    font-size: 14px;
-    padding-top: 8px;
-    padding-bottom: 8px;
     width: 100%;
   }
 }

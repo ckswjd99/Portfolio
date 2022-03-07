@@ -16,8 +16,18 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 480px) and (max-width: 768px) {
   .contentWrapper {
     width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .contentWrapper {
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }

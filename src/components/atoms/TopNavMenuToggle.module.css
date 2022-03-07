@@ -14,7 +14,7 @@
   }
 }
 
-@media screen and (min-width: 480px) and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .wrapper {
     position: absolute;
     width: 46px;
@@ -24,18 +24,5 @@
   }
   .icon {
     width: 20px;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .wrapper {
-    position: absolute;
-    width: 41px;
-    height: 41px;
-
-    right: 0px;
-  }
-  .icon {
-    width: 18px;
   }
 }
