@@ -1,6 +1,5 @@
 import Page from "../templates/Page"
 import BlankRow from "../organisms/BlankRow"
-import ImageCaptioned from "../atoms/ImageCaptioned"
 import ParagraphWithImage from "../molecules/ParagraphWithImage"
 
 const CareerPage = () => {
@@ -22,8 +21,9 @@ const CareerPage = () => {
 
       <h2 id='h2_SNUECE'>SNU ECE Undergraduate</h2>
       <ParagraphWithImage src='images/snu.jpg' imageSize='medium' imagePosition='left' alignText='left'>
-        <span>I'm now (2022 Spring) <strong>senior</strong> of Seoul National University, Electronical and Computer Engineering.</span><br />
-        <span>I <strong>have taken</strong> classes such as</span>
+        <p><strong>2017.03.~2023.02.</strong> Including military service.</p>
+        <p>I'm now (2022 Spring) <strong>senior</strong> of Seoul National University, Electronical and Computer Engineering.</p>
+        <p>I <strong>have taken</strong> classes such as</p>
         <ul>
           <li>Digital Logic Design</li>
           <li>Data Structure</li>
@@ -43,14 +43,14 @@ const CareerPage = () => {
       <BlankRow height='30' />
 
       <h2 id='h2_OSAM'>OSAM Online Hackathon</h2>
+      <p><strong>2020.06.~2020.11.</strong> Around the end of my military service.</p>
+
       <img src='images/award.jpg' alt='award' style={{ marginBottom: '20px' }} />
-      <span>I served in the military from May 2019 to December 2020.</span>
-      <span>
-        At the end of 2020, <a href="https://osam.kr" target="_blank" rel="noreferrer">OSAM</a> organized hackathon, so I gathered team members and developed <strong>non-face-to-face smartphone return system</strong>, and at November 2020, I won the <strong>Minister of National Defense Award</strong>(with some prize money!).
-      </span>
-      <span>In this hackathon, I learned and experienced the following.</span>
+
+      <span>I won the <strong>Minister of National Defense Award</strong> at hackathon organized by <a href="https://osam.kr" target="_blank" rel="noreferrer">OSAM</a>, by developing <strong>non-face-to-face smartphone return system</strong>.</span>
       <ul>
         <li>Propose product, define its functionality and limitations</li>
+        <li>Gather teammates, communicate online.</li>
         <li>Cooperate through <strong>Git and Github</strong></li>
         <li>Develop a <strong>new QR code encryption theory</strong>, implement it with <strong>Python</strong> (+OpenCV, Pillow)</li>
         <li>Create MVP with <strong>RaspberryPi</strong> and prove feasibility</li>
@@ -72,27 +72,71 @@ const CareerPage = () => {
 
       <h2>Outsourcing at GreeGo</h2>
       <ParagraphWithImage src='images/jeju.jpg' imagePosition='right' imageSize='medium' alignText='left'>
-        wow
+        <p><strong>2020.11.~2021.02.</strong><br />After discharge, before going back to school.</p>
+        <p>I joined a team <strong>building application <a href='https://play.google.com/store/apps/details?id=com.greegoing.greego&hl=ko&gl=US' target='_blank' rel='noreferrer'>GreeGo</a></strong>, which is an application for travelers in Jeju island.</p>
+        <p>It was first time I <strong>got paid</strong> to development.</p>
+        <ul>
+          <li><strong>TypeScript + Express.js</strong></li>
+          <li>Relative Databese (<strong>MySQL, OraclDB</strong>)</li>
+          <li>Analyze <strong>API documentations</strong> for other services, then apply them in our service.<br />(Twizy, evpass, gogoro, Jeju bus, KG Inicis) </li>
+          <li>Let users and admins reserve, return, manage exception cases for shared vehicles. </li>
+          <li>Let users and admins pay or refund with credit cards.</li>
+          <li>Provide realtime locations and routes of every Jeju bus.</li>
+          <li>Create documentation for this service, using Postman.</li>
+          <li>Communicate with a product manager and a front-end developer.</li>
+        </ul>
       </ParagraphWithImage>
 
       <BlankRow height='30' />
 
       <h2>Intern at ZalaCompany</h2>
       <ParagraphWithImage src='images/zala.jpg'>
-        holy wow
+        <p><strong>2021.07.~2021.09.</strong><br />Summer Vacation of 2021.</p>
+        <p><a href='https://zalacompany.com' target='_blank' rel="noreferrer"><strong>ZalaCompany</strong></a> makes application that <strong>automatically analyzes live broadcast and recommends edit points</strong>.</p>
+        <p>I worked as a <strong>full-time intern</strong>, position of <strong>algorithm developer</strong>.</p>
+        <ul>
+          <li><strong>Parse chatting data APIs</strong> of Twitch, Afreeca, YouTube and VLive <strong>manually</strong>.</li>
+          <li>Devise a <strong>new algorithm rating live chats</strong>, less rule-based.</li>
+          <li>Implement the algorithm with <strong>Node.js</strong>, as a modulized library.</li>
+          <li>Apply library to the product by <strong>multithreading and IPC</strong>.</li>
+          <li>Create documentation for algorithm and library.</li>
+          <li><s>Taste the sweetness of advanced IT corporate culture.</s></li>
+        </ul>
       </ParagraphWithImage>
 
       <BlankRow height='30' />
 
       <h2>Crowdfunding of {`<LovePlanet>`}</h2>
       <ParagraphWithImage src='images/loveplanet.jpg'>
-        oh yeah
+        <p><strong>2021.10.~2022.02.</strong><br />Indie movie project at 2021 Autumn.</p>
+        <p>In SNU movie club YALA, I participated in film project <a href='https://tumblbug.com/loveplanet' target='_blank' rel="noreferrer"><strong>{`<LovePlanet>`}</strong></a>.</p>
+        <p>Firstly I made webpages as a prop, then developed it as a <strong>real service providing a real experience related to movie</strong>. So from front-end to back-end, everything is <strong>done by myself</strong>.</p>
+        <ul>
+          <li>Act as a minor actor!</li>
+          <li>Communicate with producer, make decision on design and functionalities.</li>
+          <li>HTML5, CSS3, JavaScript</li>
+          <li>Node.js + Express.js</li>
+          <li>MySQL</li>
+          <li>AWS EC2, RDS</li>
+        </ul>
+        <p>You can look around <a href='https://yala-love-planet.herokuapp.com/' target='_blank' rel="noreferrer">webpages as a prop</a>. Real Service is provided for supporters(will be opened to public soon).</p>
       </ParagraphWithImage>
 
       <BlankRow height='30' />
 
       <h2>Back-end Engineer at NurseVillage</h2>
 
+      <ParagraphWithImage src='images/nursevillage.png'>
+        <p><strong>2022.01.~2022.03.</strong> Winter Vacation of 2022.</p>
+        <p><a href='https://nursevillage.com' target='_blank' rel="noreferrer" ><strong>NurseVillage</strong></a> is a community platform for nurses, providing informations about hospitals and universities.</p>
+        <ul>
+          <li>Have a meeting with judges from venture capital and outsourcing cooporation.</li>
+          <li>Vue.js</li>
+          <li>Node.js + Express.js</li>
+          <li>MongoDB</li>
+          <li>AWS EC2, S3, CloudFront, Route53</li>
+        </ul>
+      </ParagraphWithImage>
 
     </Page>
   )

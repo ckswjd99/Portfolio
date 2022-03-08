@@ -23,3 +23,7 @@ span {
   margin-top: 5px;
   margin-bottom: 5px;
 }
+
+p:first-child {
+  margin-top: 0;
+}

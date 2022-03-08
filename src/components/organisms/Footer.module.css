@@ -2,7 +2,7 @@
   background-color: rgb(238, 237, 237);
   margin-top: 30px;
   border-top: 1px solid lightgray;
-  padding-top: 20px;
+  padding-top: 30px;
   padding-bottom: 50px;
 }
 
@@ -13,6 +13,9 @@
   margin-right: auto;
   color: gray;
   font-size: 14px;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
 }
 
 .leftParagraph {
@@ -33,5 +36,12 @@
     width: 100%;
     padding-left: 20px;
     padding-right: 20px;
+    flex-direction: column;
+  }
+  .leftParagraph {
+    margin-bottom: 20px;
+  }
+  .rightParagraph {
+    text-align: left;
   }
 }
