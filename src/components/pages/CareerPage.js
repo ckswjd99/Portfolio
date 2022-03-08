@@ -1,25 +1,26 @@
 import Page from "../templates/Page"
 import BlankRow from "../organisms/BlankRow"
 import ParagraphWithImage from "../molecules/ParagraphWithImage"
+import HiddenA from "../atoms/HiddenA"
 
 const CareerPage = () => {
   return (
     <Page>
       <h1>Career</h1>
       <ul>
-        <li><strong>Undergraduate Student</strong> @ Seoul National University, Electronical and Computer Engineering. (Senior in 2022)</li>
-        <li>
-          <strong>Minister of National Defense Award</strong> @ <a href="https://osam.kr/hackathon/awards?m=v&wdnId=11">Online Hackathon</a> from Open Source Academy for Military. (20/6~11)
+        <li id='li_SNUECE'><HiddenA href='#h2_SNUECE'><strong>Undergraduate Student</strong></HiddenA> @ Seoul National University, Electronical and Computer Engineering. (Senior in 2022)</li>
+        <li id='li_OSAM'>
+          <HiddenA href='#h2_OSAM'><strong>Minister of National Defense Award</strong></HiddenA> @ <a href="https://osam.kr/hackathon/awards?m=v&wdnId=11">Online Hackathon</a> from Open Source Academy for Military. (20/6~11)
         </li>
-        <li><strong>Outsourcing</strong> @ KST Mobility - worked as back-end engineer, developing application <a href="https://play.google.com/store/apps/details?id=com.greegoing.greego&hl=ko&gl=US">GreeGo</a>. (20/12~21/2)</li>
-        <li><strong>Intern</strong> @ <a href="https://zalacompany.com/home">ZalaCompany</a> - advancing algorithm for rating live chat data. (21/7~9)</li>
-        <li><strong>Crowdfunding</strong> @ <a href="https://tumblbug.com/loveplanet">Movie LovePlanet</a> - worked as website devleoper, minor actor. (21/10~22/2)</li>
-        <li><strong>Back-end Engineer</strong> @ <a href="https://nursevillage.com">NurseVillage</a> - startup team making community for nurses. (22/01~22/03) </li>
+        <li id='li_GREEGO'><HiddenA href='#h2_GREEGO'><strong>Outsourcing</strong></HiddenA> @ KST Mobility - worked as back-end engineer, developing application <a href="https://play.google.com/store/apps/details?id=com.greegoing.greego&hl=ko&gl=US">GreeGo</a>. (20/12~21/2)</li>
+        <li id='li_ZALA'><HiddenA href='#h2_ZALA'><strong>Intern</strong></HiddenA> @ <a href="https://zalacompany.com/home">ZalaCompany</a> - advancing algorithm for rating live chat data. (21/7~9)</li>
+        <li id='li_LOVEPLANET'><HiddenA href='#h2_LOVEPLANET'><strong>Crowdfunding</strong></HiddenA> @ <a href="https://tumblbug.com/loveplanet">Movie LovePlanet</a> - worked as website devleoper, minor actor. (21/10~22/2)</li>
+        <li id='li_NURVIL'><HiddenA href='#h2_NURVIL'><strong>Back-end Engineer</strong></HiddenA> @ <a href="https://nursevillage.com">NurseVillage</a> - startup team making community for nurses. (22/01~22/03) </li>
       </ul>
 
       <BlankRow height='30' />
 
-      <h2 id='h2_SNUECE'>SNU ECE Undergraduate</h2>
+      <h2 id='h2_SNUECE'><HiddenA src='#li_SNUECE'>SNU ECE Undergraduate</HiddenA></h2>
       <ParagraphWithImage src='images/snu.jpg' imageSize='medium' imagePosition='left' alignText='left'>
         <p><strong>2017.03.~2023.02.</strong> Including military service.</p>
         <p>I'm now (2022 Spring) <strong>senior</strong> of Seoul National University, Electronical and Computer Engineering.</p>
@@ -42,7 +43,7 @@ const CareerPage = () => {
 
       <BlankRow height='30' />
 
-      <h2 id='h2_OSAM'>OSAM Online Hackathon</h2>
+      <h2 id='h2_OSAM'><HiddenA href='#li_OSAM'>OSAM Online Hackathon</HiddenA></h2>
       <p><strong>2020.06.~2020.11.</strong> Around the end of my military service.</p>
 
       <img src='images/award.jpg' alt='award' style={{ marginBottom: '20px' }} />
@@ -70,7 +71,7 @@ const CareerPage = () => {
 
       <BlankRow height='30' />
 
-      <h2>Outsourcing at GreeGo</h2>
+      <h2 id='h2_GREEGO'><HiddenA href='#li_GREEGO'>Outsourcing at GreeGo</HiddenA></h2>
       <ParagraphWithImage src='images/jeju.jpg' imagePosition='right' imageSize='medium' alignText='left'>
         <p><strong>2020.11.~2021.02.</strong><br />After discharge, before going back to school.</p>
         <p>I joined a team <strong>building application <a href='https://play.google.com/store/apps/details?id=com.greegoing.greego&hl=ko&gl=US' target='_blank' rel='noreferrer'>GreeGo</a></strong>, which is an application for travelers in Jeju island.</p>
@@ -89,8 +90,8 @@ const CareerPage = () => {
 
       <BlankRow height='30' />
 
-      <h2>Intern at ZalaCompany</h2>
-      <ParagraphWithImage src='images/zala.jpg'>
+      <h2 id='h2_ZALA'><HiddenA href='#li_ZALA'>Intern at ZalaCompany</HiddenA></h2>
+      <ParagraphWithImage src='images/zala.jpg' imageSize='small'>
         <p><strong>2021.07.~2021.09.</strong><br />Summer Vacation of 2021.</p>
         <p><a href='https://zalacompany.com' target='_blank' rel="noreferrer"><strong>ZalaCompany</strong></a> makes application that <strong>automatically analyzes live broadcast and recommends edit points</strong>.</p>
         <p>I worked as a <strong>full-time intern</strong>, position of <strong>algorithm developer</strong>.</p>
@@ -106,8 +107,8 @@ const CareerPage = () => {
 
       <BlankRow height='30' />
 
-      <h2>Crowdfunding of {`<LovePlanet>`}</h2>
-      <ParagraphWithImage src='images/loveplanet.jpg'>
+      <h2 id='h2_LOVEPLANET'><HiddenA href='#li_LOVEPLANET'>Crowdfunding of {`<LovePlanet>`}</HiddenA></h2>
+      <ParagraphWithImage src='images/loveplanet.jpg' imageSize='small'>
         <p><strong>2021.10.~2022.02.</strong><br />Indie movie project at 2021 Autumn.</p>
         <p>In SNU movie club YALA, I participated in film project <a href='https://tumblbug.com/loveplanet' target='_blank' rel="noreferrer"><strong>{`<LovePlanet>`}</strong></a>.</p>
         <p>Firstly I made webpages as a prop, then developed it as a <strong>real service providing a real experience related to movie</strong>. So from front-end to back-end, everything is <strong>done by myself</strong>.</p>
@@ -124,9 +125,9 @@ const CareerPage = () => {
 
       <BlankRow height='30' />
 
-      <h2>Back-end Engineer at NurseVillage</h2>
+      <h2 id='h2_NURVIL'><HiddenA href='#li_NURVIL'>Back-end Engineer at NurseVillage</HiddenA></h2>
 
-      <ParagraphWithImage src='images/nursevillage.png'>
+      <ParagraphWithImage src='images/nursevillage.png' imageSize='small'>
         <p><strong>2022.01.~2022.03.</strong> Winter Vacation of 2022.</p>
         <p><a href='https://nursevillage.com' target='_blank' rel="noreferrer" ><strong>NurseVillage</strong></a> is a community platform for nurses, providing informations about hospitals and universities.</p>
         <ul>
