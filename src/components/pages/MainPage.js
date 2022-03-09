@@ -8,7 +8,7 @@ const MainPage = () => {
       <p>
         I'm Chan Jeong Park, who continuously creates something.
       </p>
-      <p>
+      <span>
         If you are interested in me as a<br />
         <ul>
           <li>Developer - visit my <a href="https://github.com/ckswjd99" target="_blank" rel="noreferrer">GitHub</a>.</li>
@@ -16,7 +16,7 @@ const MainPage = () => {
           <li>Social Being - visit my <a href="https://instagram.com/ckswjd99" target="_blank" rel="noreferrer">instagram</a>.</li>
           <li>Attention Seeker - visit my <a href="https://www.youtube.com/channel/UCpgFtS2yVgbtk5qgThNAv1Q" target="_blank" rel="noreferrer">YouTube</a>.</li>
         </ul>
-      </p>
+      </span>
       <p>
         Or you can see some of my creations below.
       </p>

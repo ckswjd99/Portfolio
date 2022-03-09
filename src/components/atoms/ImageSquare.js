@@ -14,7 +14,7 @@ const ImageSquare = (props) => {
 
   return (
     <div style={container}>
-      <img src={src} style={image} alt='squaredImage' />
+      {src ? <img src={src} style={image} alt='squaredImage' /> : null}
     </div>
   )
 }

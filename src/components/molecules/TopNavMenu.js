@@ -9,7 +9,7 @@ const TopNavMenu = (props) => {
       {
         Object.entries(menu).map(([menuName, onClick]) => {
           return (
-            <TopNavMenuButton onClick={onClick}>{menuName}</TopNavMenuButton>
+            <TopNavMenuButton onClick={onClick} key={menuName}>{menuName}</TopNavMenuButton>
           )
         })
       }
