@@ -1,0 +1,57 @@
+.ratioBox {
+  box-sizing: border-box;
+  height: 0;
+
+  position: relative;
+}
+
+.contentWrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  display: flex;
+  border-radius: 5px;
+}
+
+.textArea {
+  overflow-y: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .ratioBox {
+    min-width: 70vw;
+    padding-bottom: 62.5%;
+  }
+  .contentWrapper {
+    flex-direction: row;
+  }
+  .imageArea {
+    width: 62.5%;
+    display: flex;
+    align-items: center;
+    background-color: black;
+  }
+  .textArea {
+    min-width: 250px;
+    max-width: 300px;
+    padding: 10px 20px 10px 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .ratioBox {
+    width: 60%;
+    min-width: 80vw;
+    padding-bottom: 130%;
+  }
+  .contentWrapper {
+    flex-direction: column;
+  }
+  .textArea {
+    min-width: 300px;
+    padding: 10px 20px 10px 20px;
+  }
+}

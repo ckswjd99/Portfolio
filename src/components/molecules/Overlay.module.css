@@ -1,0 +1,26 @@
+.contentWrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: calc(100vw - (100vw - 100%));
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 5vh 5vw 5vh 5vw;
+  box-sizing: border-box;
+}
+
+.contentArea {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}

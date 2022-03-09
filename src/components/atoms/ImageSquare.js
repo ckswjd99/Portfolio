@@ -3,7 +3,8 @@ const ImageSquare = (props) => {
   const container = {
     width: '100%',
     paddingBottom: '100%',
-    position: 'relative'
+    position: 'relative',
+    height: 0
   }
   const image = {
     objectFit: 'cover',
