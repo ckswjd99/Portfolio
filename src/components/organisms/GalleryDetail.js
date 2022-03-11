@@ -6,8 +6,8 @@ const GalleryDetail = (props) => {
   const { children, src, visible, onBackgroundClick } = props
   return (
     <Overlay visible={visible} onBackgroundClick={onBackgroundClick}>
-      <div className={styles.ratioBox}>
-        <div className={styles.contentWrapper}>
+      <div className={styles.widthLimiter}>
+        <div className={styles.heightLimiter}>
           <div className={styles.imageArea}>
             <ImageSquare src={src} />
           </div>

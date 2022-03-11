@@ -1,67 +1,61 @@
+import { useState } from "react";
+
 import HiddenA from "../atoms/HiddenA"
 import ImageGrid from "../organisms/ImageGrid"
 import BlankRow from "../organisms/BlankRow"
+import GalleryDetail from "../organisms/GalleryDetail";
 import Page from "../templates/Page"
 
+import { colNum, categories, overlayList } from './GalleryPageConfig.js'
+
+
+
 const GalleryPage = () => {
+  const [overlayVisible, setOverlayVisible] = useState(false);
+  const [overlayIndex, setOverlayIndex] = useState(0);
+
   return (
-    <Page>
-      <h1>Gallery</h1>
-      <p>All photos are taken by me, creations are made by me.</p>
-      <ul>
-        <li id='li_travel'><HiddenA href='#h2_travel'><strong>Travel</strong></HiddenA></li>
-        <li id='li_food'><HiddenA href='#h2_food'><strong>Food</strong></HiddenA></li>
-        <li id='li_weird'><HiddenA href='#h2_weird'><strong>Weird</strong></HiddenA></li>
-      </ul>
+    <div>
+      <Page>
+        <h1>Gallery</h1>
+        <p>All photos are taken by me, creations are made by me.</p>
 
-      <BlankRow height='20' />
+        <ul>
+          {
+            categories.map(categoryName =>
+              <li id={`li_${categoryName}`} key={categoryName}><HiddenA href={`#h2_${categoryName}`}><strong>{categoryName}</strong></HiddenA></li>
+            )
+          }
+        </ul>
 
-      <h2 id='h2_travel'><HiddenA href='#li_travel'>Travel</HiddenA></h2>
-      <ImageGrid colNum='4' images={[
-        { src: 'images/zala.jpg', onClick: () => console.log('clicked image') },
-        { src: 'images/award.jpg', onClick: () => console.log('clicked image') },
-        { src: 'images/20181201_223218.jpg', onClick: () => console.log('clicked image') },
-        { src: 'images/loveplanet.jpg', onClick: () => console.log('clicked image') },
-        { src: 'images/snu.jpg', onClick: () => console.log('clicked image') },
-        { src: 'images/snu.jpg', onClick: () => console.log('clicked image') },
-        { src: 'images/snu.jpg', onClick: () => console.log('clicked image') },
-        { src: 'images/snu.jpg', onClick: () => console.log('clicked image') },
-        { src: 'images/snu.jpg', onClick: () => console.log('clicked image') },
-      ]} />
+        {
+          categories.map(categoryName => {
+            return (
+              <div key={categoryName}>
+                <BlankRow height='20' />
 
-      <BlankRow height='20' />
+                <h2 id={`h2_${categoryName}`}><HiddenA href={`#li_${categoryName}`}>{categoryName}</HiddenA></h2>
+                <ImageGrid colNum={colNum} images={
+                  overlayList.map((obj, index) => { return { data: obj, index } }).filter(obj => obj.data.category === categoryName).map(obj => {
+                    const onClick = () => {
+                      setOverlayVisible(true)
+                      setOverlayIndex(obj.index)
+                    }
+                    return { src: obj.data.src, onClick }
+                  })
+                } />
+              </div>
+            )
+          })
+        }
 
-      <h2 id='h2_food'><HiddenA href='#li_food'>Food</HiddenA></h2>
-      <ImageGrid colNum='4' images={[
-        { src: 'images/zala.jpg', onClick: () => console.log('clicked image') },
-        { src: 'images/award.jpg', onClick: () => console.log('clicked image') },
-        { src: 'images/20181201_223218.jpg', onClick: () => console.log('clicked image') },
-        { src: 'images/loveplanet.jpg', onClick: () => console.log('clicked image') },
-        { src: 'images/snu.jpg', onClick: () => console.log('clicked image') },
-        { src: 'images/snu.jpg', onClick: () => console.log('clicked image') },
-        { src: 'images/snu.jpg', onClick: () => console.log('clicked image') },
-        { src: 'images/snu.jpg', onClick: () => console.log('clicked image') },
-        { src: 'images/snu.jpg', onClick: () => console.log('clicked image') },
-      ]} />
+        <BlankRow height='200' />
 
-      <BlankRow height='20' />
+      </Page>
 
-      <h2 id='h2_weird'><HiddenA href='#li_weird'>Weird</HiddenA></h2>
-      <ImageGrid colNum='4' images={[
-        { src: 'images/zala.jpg', onClick: () => console.log('clicked image') },
-        { src: 'images/award.jpg', onClick: () => console.log('clicked image') },
-        { src: 'images/20181201_223218.jpg', onClick: () => console.log('clicked image') },
-        { src: 'images/loveplanet.jpg', onClick: () => console.log('clicked image') },
-        { src: 'images/snu.jpg', onClick: () => console.log('clicked image') },
-        { src: 'images/snu.jpg', onClick: () => console.log('clicked image') },
-        { src: 'images/snu.jpg', onClick: () => console.log('clicked image') },
-        { src: 'images/snu.jpg', onClick: () => console.log('clicked image') },
-        { src: 'images/snu.jpg', onClick: () => console.log('clicked image') },
-      ]} />
+      <GalleryDetail src={overlayList[overlayIndex].src} visible={overlayVisible} onBackgroundClick={() => setOverlayVisible(false)}>{overlayList[overlayIndex].content}</GalleryDetail>
 
-      <BlankRow height='200' />
-
-    </Page>
+    </div >
   )
 }
 
