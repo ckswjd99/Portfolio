@@ -1,6 +1,6 @@
 import style from './Page.module.css'
 
-import menus from '../menu'
+import menus from '../configs/menu'
 import TopNav from '../organisms/TopNav'
 import MainContent from '../organisms/MainContent'
 import Footer from '../organisms/Footer'

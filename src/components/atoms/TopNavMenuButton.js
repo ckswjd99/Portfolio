@@ -1,9 +1,12 @@
+import { Link } from 'react-router-dom'
 import style from './TopNavMenuButton.module.css'
 
 const TopNavMenu = (props) => {
-  const { children, onClick } = props
+  const { children, to } = props
   return (
-    <button onClick={onClick} className={style.buttonArea}>{children}</button>
+    <Link to={to}>
+      <button className={style.buttonArea}>{children}</button>
+    </Link>
   )
 }
 

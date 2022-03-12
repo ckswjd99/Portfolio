@@ -7,9 +7,9 @@ const TopNavMenu = (props) => {
   return (
     <div className={`${style.menuContainer} ${visibility ? null : style.hidden}`}>
       {
-        Object.entries(menu).map(([menuName, onClick]) => {
+        Object.entries(menu).map(([menuName, to]) => {
           return (
-            <TopNavMenuButton onClick={onClick} key={menuName}>{menuName}</TopNavMenuButton>
+            <TopNavMenuButton to={to} key={menuName}>{menuName}</TopNavMenuButton>
           )
         })
       }

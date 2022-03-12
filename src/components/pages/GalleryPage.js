@@ -6,7 +6,7 @@ import BlankRow from "../organisms/BlankRow"
 import GalleryDetail from "../organisms/GalleryDetail";
 import Page from "../templates/Page"
 
-import { colNum, categories, overlayList } from './GalleryPageConfig.js'
+import { colNum, categories, overlayList } from '../configs/GalleryPageConfig.js'
 
 
 
