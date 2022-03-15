@@ -40,6 +40,14 @@
     max-height: 90vh;
 
     background-color: black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .imageItself {
+    max-width: 100%;
+    max-height: 100%;
   }
   .textArea {
     width: 30vw;

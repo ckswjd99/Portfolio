@@ -1,4 +1,3 @@
-import ImageSquare from '../atoms/ImageSquare'
 import Overlay from '../molecules/Overlay'
 import styles from './GalleryDetail.module.css'
 
@@ -9,7 +8,7 @@ const GalleryDetail = (props) => {
       <div className={styles.widthLimiter}>
         <div className={styles.heightLimiter}>
           <div className={styles.imageArea}>
-            <ImageSquare src={src} />
+            <img className={styles.imageItself} src={src} alt='detailImage'/>
           </div>
           <div className={styles.textArea}>
             {children}
