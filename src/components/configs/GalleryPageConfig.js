@@ -18,6 +18,218 @@ const overlayList = [
       </div>
     )
   },
+  {
+    category: 'Travel',
+    src: 'images/gallery/travel/20180831_132105.jpg',
+    content: (
+      <div>
+        <h2>Torii on a Water</h2>
+        <p>2018/08/30 ~ 09/01<br />Hiroshima, Japan,<br />alone.</p>
+      </div>
+    )
+  },
+  {
+    category: 'Travel',
+    src: 'images/gallery/travel/20180830_173137.jpg',
+    content: (
+      <div>
+        <h2>Hiroshima Streetcar</h2>
+        <p>2018/08/30 ~ 09/01<br />Hiroshima, Japan,<br />alone.</p>
+      </div>
+    )
+  },
+  {
+    category: 'Travel',
+    src: 'images/gallery/travel/20180821_095738.jpg',
+    content: (
+      <div>
+        <h2>DAB on a Road</h2>
+        <p>2018/08/19 ~ 22<br />Aso, Japan,<br />with my highschool friend.</p>
+      </div>
+    )
+  },
+  {
+    category: 'Travel',
+    src: 'images/gallery/travel/2018-08-02-15-36-49.jpg',
+    content: (
+      <div>
+        <h2>Kyotogyoen</h2>
+        <p>2018/08/02 ~ 04<br />Kyoto, Japan,<br />with my parents.</p>
+      </div>
+    )
+  },
+  {
+    category: 'Travel',
+    src: 'images/gallery/travel/1532943678130.jpg',
+    content: (
+      <div>
+        <h2>Street of Takamatsu</h2>
+        <p>2018/07/17 ~ 20<br />Takamatsu, Japan,<br />with my cousin.</p>
+      </div>
+    )
+  },
+  {
+    category: 'Travel',
+    src: 'images/gallery/travel/20180718_195425.jpg',
+    content: (
+      <div>
+        <h2>Enterance of Dogo Onsen Street</h2>
+        <p>Hot spring is always pleasing!</p>
+        <p>2018/07/17 ~ 20<br />Matsuyama, Japan,<br />with my cousin.</p>
+      </div>
+    )
+  },
+  {
+    category: 'Travel',
+    src: 'images/gallery/travel/20180717_181113.jpg',
+    content: (
+      <div>
+        <h2>Kawaii-est Station in the World</h2>
+        <p>What an adorable smile!</p>
+        <p>2018/07/17 ~ 20<br />Takamatsu, Japan,<br />with my cousin.</p>
+      </div>
+    )
+  },
+  {
+    category: 'Travel',
+    src: 'images/gallery/travel/20180705_192306.jpg',
+    content: (
+      <div>
+        <h2>Jilong Night Market</h2>
+        <p>Full of local foods.</p>
+        <p>2018/07/02 ~ 06<br />Jilong, Taiwan,<br />with highschool friends.</p>
+      </div>
+    )
+  },
+  {
+    category: 'Travel',
+    src: 'images/gallery/travel/20180527_130602.jpg',
+    content: (
+      <div>
+        <h2>Rest in Shinjuku Gyoen</h2>
+        <p>Moat of Kokura castle.</p>
+        <p>2018/05/25 ~ 28<br />Tokyo, Japan,<br />with university alumni.</p>
+      </div>
+    )
+  },
+  {
+    category: 'Travel',
+    src: 'images/gallery/travel/20180402_113313.jpg',
+    content: (
+      <div>
+        <h2>Sakura Flower in Moat</h2>
+        <p>Moat of Kokura castle.</p>
+        <p>2018/03/31 ~ 04/02<br />Kitakyushu, Japan,<br />alone.</p>
+      </div>
+    )
+  },
+  {
+    category: 'Travel',
+    src: 'images/gallery/travel/20180401_130051.jpg',
+    content: (
+      <div>
+        <h2>Unknown Sculpture</h2>
+        <p>At local park.</p>
+        <p>2018/03/31 ~ 04/02<br />Shimonoseki, Japan,<br />alone.</p>
+      </div>
+    )
+  },
+  {
+    category: 'Travel',
+    src: 'images/gallery/travel/20180401_082453.jpg',
+    content: (
+      <div>
+        <h2>Big Torii at Mojico</h2>
+        <p>Little suburb area of Mojico, exotic village.</p>
+        <p>2018/03/31 ~ 04/02<br />Kitakyushu, Japan,<br />alone.</p>
+      </div>
+    )
+  },
+  {
+    category: 'Travel',
+    src: 'images/gallery/travel/20180127_104655.jpg',
+    content: (
+      <div>
+        <h2>Gero Onsen Village</h2>
+        <p>I love snowy village.</p>
+        <p>2018/01/26 ~ 28<br />Nagoya, Japan,<br />with university alumni.</p>
+      </div>
+    )
+  },
+  {
+    category: 'Travel',
+    src: 'images/gallery/travel/20171218_143609.jpg',
+    content: (
+      <div>
+        <h2>Snowy Hill Road without any Life</h2>
+        <p>I thought it would be a daily life for people in Wakkanai.</p>
+        <p>But wasn't.</p>
+        <p>2017/12/15 ~ 20<br />Hokkaido of Japan,<br />alone.</p>
+      </div>
+    )
+  },
+  {
+    category: 'Travel',
+    src: 'images/gallery/travel/20171216_182031.jpg',
+    content: (
+      <div>
+        <h2>Happy Christmas Season</h2>
+        <p>2017/12/15 ~ 20<br />Hokkaido of Japan,<br />alone.</p>
+      </div>
+    )
+  },
+  {
+    category: 'Travel',
+    src: 'images/gallery/travel/20171216_095752.jpg',
+    content: (
+      <div>
+        <h2>Bullying a Bear</h2>
+        <p>
+          The bear is clever, so flirt visitors looking for food.
+        </p>
+        <p>2017/12/15 ~ 20<br />Hokkaido of Japan,<br />alone.</p>
+      </div>
+    )
+  },
+  {
+    category: 'Travel',
+    src: 'images/gallery/travel/20170824_190105.jpg',
+    content: (
+      <div>
+        <h2>Local Festival of Japan</h2>
+        <p>
+          Introducing local mascot.
+        </p>
+        <p>2017/02/22 ~ 25<br />Kansai of Japan,<br />with a highschool alumni.</p>
+      </div>
+    )
+  },
+  {
+    category: 'Travel',
+    src: 'images/gallery/travel/20170616_130009.jpg',
+    content: (
+      <div>
+        <h2>Kawaii-days of Mine</h2>
+        <p>
+          Camoflague in the bamboo forest.
+        </p>
+        <p>2017/08/23 ~ 31<br />Northern Kyushu,<br />with a university alumni.</p>
+      </div>
+    )
+  },
+  {
+    category: 'Travel',
+    src: 'images/gallery/travel/20170224_054737.jpg',
+    content: (
+      <div>
+        <h2>Kawaii-days of Mine</h2>
+        <p>
+          Wake up at 5:00 A.M., have a bite of bread.
+        </p>
+        <p>2017/02/22 ~ 25<br />Kansai of Japan,<br />with a highschool alumni.</p>
+      </div>
+    )
+  },
 
   {
     category: 'Foods',
@@ -216,6 +428,17 @@ const overlayList = [
       </div>
     )
   },
+  {
+    category: 'Foods',
+    src: 'images/gallery/foods/20170717_112749.jpg',
+    content: (
+      <div>
+        <h2>Ramyeon Donkatsu</h2>
+        <p>Simple idea, Dontaksu on ramyeon.<br/>This is one of my soul food, big part of my highschool memories.</p>
+        <p>2017/07/17<br />Rodem Tree,<br />In front of highschool where I graduated.</p>
+      </div>
+    )
+  },
 
   {
     category: 'Arts',
@@ -248,7 +471,104 @@ const overlayList = [
       </div>
     )
   },
+  {
+    category: 'Arts',
+    src: 'images/gallery/arts/20180212_152201.jpg',
+    content: (
+      <div>
+        <h2>Nagoya Castle</h2>
+        cardboard<br />
+        made in Daejeon, 2018<br /><br />
+        Bought a making kit at Nagoya Castle.
+      </div>
+    )
+  },
+  {
+    category: 'Arts',
+    src: 'images/gallery/arts/mid_mountain.jpg',
+    content: (
+      <div>
+        <h2>Around Mid Mountain</h2>
+        digital illustration<br />
+        1500 x 2667 px.<br />
+        Painted in Seoul, 2018<br /><br />
+        Typically idyllic, so nostalgic. Drawn mainly to practice drawing flowers.
+      </div>
+    )
+  },
+  {
+    category: 'Arts',
+    src: 'images/gallery/arts/student_hall.jpg',
+    content: (
+      <div>
+        <h2>Magic Rabbit over Student Hall</h2>
+        digital illustration<br />
+        3600 x 4973 px.<br />
+        Painted in Seoul, 2018<br /><br />
+        Drawn as a part of poster for performance in Monghwan, a magic club in SNU.
+      </div>
+    )
+  },
+  {
+    category: 'Arts',
+    src: 'images/gallery/arts/pinky_spring.jpg',
+    content: (
+      <div>
+        <h2>Pinky Spring</h2>
+        digital illustration<br />
+        1800 x 3200 px.<br />
+        Painted in Seoul, 2018<br /><br />
+        Outright spring style illustration.
+      </div>
+    )
+  },
+  {
+    category: 'Arts',
+    src: 'images/gallery/arts/sakuragi_at_kamogawa.jpg',
+    content: (
+      <div>
+        <h2>Sakuragi along Kamogawa</h2>
+        digital illustration<br />
+        1800 x 3200 px.<br />
+        Painted in Seoul, 2018<br /><br />
+        Referenced a photo taken by me at Kamogawa, Kyoto.
+      </div>
+    )
+  },
+  {
+    category: 'Arts',
+    src: 'images/gallery/arts/takoyaki.jpg',
+    content: (
+      <div>
+        <h2>Street Takoyaki Vendor</h2>
+        miniature<br />
+        1800 x 3200 px.<br />
+        Made in Daejeon, 2017<br /><br />
+        Bought a making kit at Osaka Municipal Housing Information Center. I love delicious takoyaki.
+      </div>
+    )
+  },
 
+  {
+    category: 'Weird',
+    src: 'images/gallery/weird/IMG_5740.JPG',
+    content: (
+      <div>
+        <h2>Shot over Donut-like Jelly</h2>
+        <p>We can see through jelly.</p>
+      </div>
+    )
+  },
+  {
+    category: 'Weird',
+    src: 'images/gallery/weird/1523188468234.jpg',
+    content: (
+      <div>
+        <h2>Sakura over Snow</h2>
+        <p>In ChoonCheon.</p>
+      </div>
+    )
+  },
   {
     category: 'Weird',
     src: 'images/gallery/weird/20171218_144703.jpg',
