@@ -9,7 +9,6 @@ import Page from "../templates/Page"
 import { colNum, categories, overlayList } from '../configs/GalleryPageConfig.js'
 
 
-
 const GalleryPage = () => {
   const [overlayVisible, setOverlayVisible] = useState(false);
   const [overlayIndex, setOverlayIndex] = useState(0);
@@ -41,7 +40,11 @@ const GalleryPage = () => {
                       setOverlayVisible(true)
                       setOverlayIndex(obj.index)
                     }
-                    return { src: obj.data.src, onClick }
+                    console.log(obj.data.thumbSrc)
+                    return { 
+                      src: obj.data.srcThumb,
+                      onClick 
+                    }
                   })
                 } />
               </div>

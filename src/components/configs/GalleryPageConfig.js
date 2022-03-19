@@ -4,7 +4,7 @@ const colNum = 4
 const categories = [
   'Travel', 'Foods', 'Arts', 'Weird'
 ]
-const overlayList = [
+const rawOverlayList = [
   {
     category: 'Travel',
     src: 'images/gallery/travel/jeju.jpg',
@@ -590,6 +590,12 @@ const overlayList = [
     )
   },
 ]
+
+const overlayList = rawOverlayList.map(overlayData => {
+  const basenameIndex = overlayData.src.lastIndexOf('/')
+  overlayData.srcThumb = overlayData.src.substring(0, basenameIndex) + "/thumbs" + overlayData.src.substring(basenameIndex)
+  return overlayData
+})
 
 export {
   colNum, categories, overlayList
