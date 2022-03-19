@@ -107,7 +107,6 @@ const rawOverlayList = [
     content: (
       <div>
         <h2>Rest in Shinjuku Gyoen</h2>
-        <p>Moat of Kokura castle.</p>
         <p>2018/05/25 ~ 28<br />Tokyo, Japan,<br />with university alumni.</p>
       </div>
     )
@@ -442,7 +441,7 @@ const rawOverlayList = [
 
   {
     category: 'Arts',
-    src: 'images/IMG_5750.jpg',
+    src: 'images/gallery/arts/IMG_5750.jpg',
     content: (
       <div>
         <h2>Ice Pretending to be Cool</h2>
@@ -460,7 +459,7 @@ const rawOverlayList = [
   },
   {
     category: 'Arts',
-    src: 'images/20181201_223218.png',
+    src: 'images/gallery/arts/20181201_223218.png',
     content: (
       <div>
         <h2>A crow staring at the full moon</h2>
