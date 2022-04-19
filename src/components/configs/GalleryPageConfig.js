@@ -2,11 +2,11 @@ import BlankRow from "../organisms/BlankRow"
 
 const colNum = 4
 const categories = [
-  'Travel', 'Foods', 'Arts', 'Weird'
+  'Travel', 'Foods', 'Performs', 'Arts', 'Weird'
 ]
-const rawOverlayList = [
+
+const travelOverlayList = [
   {
-    category: 'Travel',
     src: 'images/gallery/travel/jeju.jpg',
     content: (
       <div>
@@ -19,7 +19,6 @@ const rawOverlayList = [
     )
   },
   {
-    category: 'Travel',
     src: 'images/gallery/travel/20180831_132105.jpg',
     content: (
       <div>
@@ -29,7 +28,6 @@ const rawOverlayList = [
     )
   },
   {
-    category: 'Travel',
     src: 'images/gallery/travel/20180830_173137.jpg',
     content: (
       <div>
@@ -39,7 +37,6 @@ const rawOverlayList = [
     )
   },
   {
-    category: 'Travel',
     src: 'images/gallery/travel/20180821_095738.jpg',
     content: (
       <div>
@@ -49,7 +46,6 @@ const rawOverlayList = [
     )
   },
   {
-    category: 'Travel',
     src: 'images/gallery/travel/2018-08-02-15-36-49.jpg',
     content: (
       <div>
@@ -59,7 +55,6 @@ const rawOverlayList = [
     )
   },
   {
-    category: 'Travel',
     src: 'images/gallery/travel/1532943678130.jpg',
     content: (
       <div>
@@ -69,7 +64,6 @@ const rawOverlayList = [
     )
   },
   {
-    category: 'Travel',
     src: 'images/gallery/travel/20180718_195425.jpg',
     content: (
       <div>
@@ -80,7 +74,6 @@ const rawOverlayList = [
     )
   },
   {
-    category: 'Travel',
     src: 'images/gallery/travel/20180717_181113.jpg',
     content: (
       <div>
@@ -91,7 +84,6 @@ const rawOverlayList = [
     )
   },
   {
-    category: 'Travel',
     src: 'images/gallery/travel/20180705_192306.jpg',
     content: (
       <div>
@@ -102,7 +94,6 @@ const rawOverlayList = [
     )
   },
   {
-    category: 'Travel',
     src: 'images/gallery/travel/20180527_130602.jpg',
     content: (
       <div>
@@ -112,7 +103,6 @@ const rawOverlayList = [
     )
   },
   {
-    category: 'Travel',
     src: 'images/gallery/travel/20180402_113313.jpg',
     content: (
       <div>
@@ -123,7 +113,6 @@ const rawOverlayList = [
     )
   },
   {
-    category: 'Travel',
     src: 'images/gallery/travel/20180401_130051.jpg',
     content: (
       <div>
@@ -134,7 +123,6 @@ const rawOverlayList = [
     )
   },
   {
-    category: 'Travel',
     src: 'images/gallery/travel/20180401_082453.jpg',
     content: (
       <div>
@@ -145,7 +133,6 @@ const rawOverlayList = [
     )
   },
   {
-    category: 'Travel',
     src: 'images/gallery/travel/20180127_104655.jpg',
     content: (
       <div>
@@ -156,7 +143,6 @@ const rawOverlayList = [
     )
   },
   {
-    category: 'Travel',
     src: 'images/gallery/travel/20171218_143609.jpg',
     content: (
       <div>
@@ -168,7 +154,6 @@ const rawOverlayList = [
     )
   },
   {
-    category: 'Travel',
     src: 'images/gallery/travel/20171216_182031.jpg',
     content: (
       <div>
@@ -178,7 +163,6 @@ const rawOverlayList = [
     )
   },
   {
-    category: 'Travel',
     src: 'images/gallery/travel/20171216_095752.jpg',
     content: (
       <div>
@@ -191,7 +175,6 @@ const rawOverlayList = [
     )
   },
   {
-    category: 'Travel',
     src: 'images/gallery/travel/20170824_190105.jpg',
     content: (
       <div>
@@ -204,7 +187,6 @@ const rawOverlayList = [
     )
   },
   {
-    category: 'Travel',
     src: 'images/gallery/travel/20170616_130009.jpg',
     content: (
       <div>
@@ -217,7 +199,6 @@ const rawOverlayList = [
     )
   },
   {
-    category: 'Travel',
     src: 'images/gallery/travel/20170224_054737.jpg',
     content: (
       <div>
@@ -229,9 +210,19 @@ const rawOverlayList = [
       </div>
     )
   },
+]
 
+const foodsOverlayList = [
   {
-    category: 'Foods',
+    src: 'images/gallery/foods/20220419-1200.jpg',
+    content: (
+      <div>
+        <h2>Pasta alla Carbonara</h2>
+        <p>2022/04/19<br />Home,<br />Practice.</p>
+      </div>
+    )
+  },
+  {
     src: 'images/gallery/foods/20200626.jpg',
     content: (
       <div>
@@ -241,7 +232,6 @@ const rawOverlayList = [
     )
   },
   {
-    category: 'Foods',
     src: 'images/gallery/foods/2019-04-02-11-03-20.jpg',
     content: (
       <div>
@@ -252,7 +242,6 @@ const rawOverlayList = [
     )
   },
   {
-    category: 'Foods',
     src: 'images/gallery/foods/2019-04-01-20-49-18.jpg',
     content: (
       <div>
@@ -263,7 +252,6 @@ const rawOverlayList = [
     )
   },
   {
-    category: 'Foods',
     src: 'images/gallery/foods/2019-03-31-18-16-19.jpg',
     content: (
       <div>
@@ -274,7 +262,6 @@ const rawOverlayList = [
     )
   },
   {
-    category: 'Foods',
     src: 'images/gallery/foods/20190330_200212.jpg',
     content: (
       <div>
@@ -284,7 +271,6 @@ const rawOverlayList = [
     )
   },
   {
-    category: 'Foods',
     src: 'images/gallery/foods/2019-03-29-12-54-40.jpg',
     content: (
       <div>
@@ -294,7 +280,6 @@ const rawOverlayList = [
     )
   },
   {
-    category: 'Foods',
     src: 'images/gallery/foods/2019-03-27-21-43-55.jpg',
     content: (
       <div>
@@ -304,7 +289,6 @@ const rawOverlayList = [
     )
   },
   {
-    category: 'Foods',
     src: 'images/gallery/foods/20190327_115946.jpg',
     content: (
       <div>
@@ -315,7 +299,6 @@ const rawOverlayList = [
     )
   },
   {
-    category: 'Foods',
     src: 'images/gallery/foods/2019-03-26-12-18-51.jpg',
     content: (
       <div>
@@ -325,7 +308,6 @@ const rawOverlayList = [
     )
   },
   {
-    category: 'Foods',
     src: 'images/gallery/foods/1545739351306.jpg',
     content: (
       <div>
@@ -335,7 +317,6 @@ const rawOverlayList = [
     )
   },
   {
-    category: 'Foods',
     src: 'images/gallery/foods/20181102_183321.jpg',
     content: (
       <div>
@@ -345,7 +326,6 @@ const rawOverlayList = [
     )
   },
   {
-    category: 'Foods',
     src: 'images/gallery/foods/20180830_202409532.jpg',
     content: (
       <div>
@@ -360,7 +340,6 @@ const rawOverlayList = [
     )
   },
   {
-    category: 'Foods',
     src: 'images/gallery/foods/2018-08-21-19-29-03.jpg',
     content: (
       <div>
@@ -371,7 +350,6 @@ const rawOverlayList = [
     )
   },
   {
-    category: 'Foods',
     src: 'images/gallery/foods/2018-08-21-12-39-19.jpg',
     content: (
       <div>
@@ -381,7 +359,6 @@ const rawOverlayList = [
     )
   },
   {
-    category: 'Foods',
     src: 'images/gallery/foods/2018-08-03-21-15-03.jpg',
     content: (
       <div>
@@ -392,7 +369,6 @@ const rawOverlayList = [
     )
   },
   {
-    category: 'Foods',
     src: 'images/gallery/foods/20180709_193539.jpg',
     content: (
       <div>
@@ -405,7 +381,6 @@ const rawOverlayList = [
     )
   },
   {
-    category: 'Foods',
     src: 'images/gallery/foods/20171219_192856463.jpg',
     content: (
       <div>
@@ -416,7 +391,6 @@ const rawOverlayList = [
     )
   },
   {
-    category: 'Foods',
     src: 'images/gallery/foods/20171218_134849304.jpg',
     content: (
       <div>
@@ -428,7 +402,6 @@ const rawOverlayList = [
     )
   },
   {
-    category: 'Foods',
     src: 'images/gallery/foods/20170717_112749.jpg',
     content: (
       <div>
@@ -438,9 +411,74 @@ const rawOverlayList = [
       </div>
     )
   },
+]
 
+const performsOverlayList = [
   {
-    category: 'Arts',
+    src: 'images/gallery/performs/IMG_7062.jpg',
+    content: (
+      <div>
+        <h2>또나진</h2>
+        <p><i>또 나만 진심이었지...</i></p>
+        <p>2022/03/25<br />Spring Concert in LAB<br />with 나연, 시아, 범진, 호진, 유진, 유솔, 재준</p>
+      </div>
+    )
+  },
+  {
+    src: 'images/gallery/performs/2109perf.jpg',
+    content: (
+      <div>
+        <h2>Card Magician</h2>
+        <p>Filmed an act of cards and flowers.</p>
+        <p><a href='https://youtu.be/-ZgUoWJrz_8' target='_blank' rel="noreferrer">Watch Here</a></p>
+        <p>2021/09<br />Video Festival in Monghwan</p>
+      </div>
+    )
+  },
+  {
+    src: 'images/gallery/performs/1903perf.jpg',
+    content: (
+      <div>
+        <h2>Card Magician</h2>
+        <p>Performed an classic act of cards and flowers.</p>
+        <p>2019/03/18<br />Spring Concert in Monghwan</p>
+      </div>
+    )
+  },
+  {
+    src: 'images/gallery/performs/1537239502779.jpg',
+    content: (
+      <div>
+        <h2>Rabbit Magician</h2>
+        <p>Performed as an MC and a follow magician.</p>
+        <p>2018/09/17<br />Autumn Concert in Monghwan</p>
+      </div>
+    )
+  },
+  {
+    src: 'images/gallery/performs/1803perf.jpg',
+    content: (
+      <div>
+        <h2>Rich Man</h2>
+        <p>Performed an act depicting cryptocurrency trader.</p>
+        <p>2017/09/18<br />Spring Concert in Monghwan</p>
+      </div>
+    )
+  },
+  {
+    src: 'images/gallery/performs/1709perf.jpg',
+    content: (
+      <div>
+        <h2>Master of Ceremony</h2>
+        <p>Performed as an MC with a friend.</p>
+        <p>2017/09/18<br />Autumn Concert in Monghwan</p>
+      </div>
+    )
+  },
+]
+
+const artsOverlayList = [
+  {
     src: 'images/gallery/arts/IMG_5750.jpg',
     content: (
       <div>
@@ -458,7 +496,6 @@ const rawOverlayList = [
     )
   },
   {
-    category: 'Arts',
     src: 'images/gallery/arts/20181201_223218.png',
     content: (
       <div>
@@ -471,7 +508,6 @@ const rawOverlayList = [
     )
   },
   {
-    category: 'Arts',
     src: 'images/gallery/arts/20180212_152201.jpg',
     content: (
       <div>
@@ -483,7 +519,6 @@ const rawOverlayList = [
     )
   },
   {
-    category: 'Arts',
     src: 'images/gallery/arts/mid_mountain.jpg',
     content: (
       <div>
@@ -496,7 +531,6 @@ const rawOverlayList = [
     )
   },
   {
-    category: 'Arts',
     src: 'images/gallery/arts/student_hall.jpg',
     content: (
       <div>
@@ -509,7 +543,6 @@ const rawOverlayList = [
     )
   },
   {
-    category: 'Arts',
     src: 'images/gallery/arts/pinky_spring.jpg',
     content: (
       <div>
@@ -522,7 +555,6 @@ const rawOverlayList = [
     )
   },
   {
-    category: 'Arts',
     src: 'images/gallery/arts/sakuragi_at_kamogawa.jpg',
     content: (
       <div>
@@ -535,7 +567,6 @@ const rawOverlayList = [
     )
   },
   {
-    category: 'Arts',
     src: 'images/gallery/arts/takoyaki.jpg',
     content: (
       <div>
@@ -547,9 +578,10 @@ const rawOverlayList = [
       </div>
     )
   },
+]
 
+const weirdOverlayList = [
   {
-    category: 'Weird',
     src: 'images/gallery/weird/IMG_5740.JPG',
     content: (
       <div>
@@ -559,7 +591,6 @@ const rawOverlayList = [
     )
   },
   {
-    category: 'Weird',
     src: 'images/gallery/weird/1523188468234.jpg',
     content: (
       <div>
@@ -569,7 +600,6 @@ const rawOverlayList = [
     )
   },
   {
-    category: 'Weird',
     src: 'images/gallery/weird/20171218_144703.jpg',
     content: (
       <div>
@@ -579,7 +609,6 @@ const rawOverlayList = [
     )
   },
   {
-    category: 'Weird',
     src: 'images/gallery/weird/sc4-img-3.jpg',
     content: (
       <div>
@@ -589,6 +618,25 @@ const rawOverlayList = [
     )
   },
 ]
+
+const rawOverlayList = [
+  ...(travelOverlayList.map(data => {data["category"] = 'Travel'; return data})),
+  ...(foodsOverlayList.map(data => {data["category"] = 'Foods'; return data})),
+  ...(performsOverlayList.map(data => {data["category"] = 'Performs'; return data})),
+  ...(artsOverlayList.map(data => {data["category"] = 'Arts'; return data})),
+  ...(weirdOverlayList.map(data => {data["category"] = 'Weird'; return data})),
+
+]
+
+console.log(rawOverlayList[0])
+
+// const rawOverlayList = [
+//   
+
+//   
+
+  
+// ]
 
 const overlayList = rawOverlayList.map(overlayData => {
   const basenameIndex = overlayData.src.lastIndexOf('/')

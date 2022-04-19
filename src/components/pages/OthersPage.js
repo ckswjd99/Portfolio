@@ -6,7 +6,7 @@ const OthersPage = () => {
       <h1>Others</h1>
       <p>Other pages</p>
       <ul>
-        <li><a href='https://archive.5iq.cc'>Archive</a></li>
+        <li><a href='http://archive.5iq.cc' target='_blank' rel="noreferrer">Archive</a></li>
       </ul>
       <p>Under Contruction</p>
     </Page>
