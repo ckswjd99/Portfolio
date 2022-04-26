@@ -479,6 +479,23 @@ const performsOverlayList = [
 
 const artsOverlayList = [
   {
+    src: 'images/gallery/arts/monghwan2022spring.jpg',
+    content: (
+      <div>
+        <h2>Monghwan 2022 Spring Performance Poster</h2>
+        <p>
+          digital illustration<br />
+          906 x 1280 px.<br />
+          Painted in Seoul, 2022
+        </p>
+        <BlankRow height='20' />
+        <p>
+          I wanted all hands to be vivid red, but not accepted.
+        </p>
+      </div>
+    )
+  },
+  {
     src: 'images/gallery/arts/IMG_5750.jpg',
     content: (
       <div>
