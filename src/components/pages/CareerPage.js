@@ -128,7 +128,7 @@ const CareerPage = () => {
       <h2 id='h2_NURVIL'><HiddenA href='#li_NURVIL'>Back-end Engineer at NurseVillage</HiddenA></h2>
 
       <ParagraphWithImage src='images/nursevillage.png' imageSize='small'>
-        <p><strong>2022.01.~2022.03.</strong> Winter Vacation of 2022.</p>
+        <p><strong>2022.01.~2022.06.</strong> The First Half of 2022.</p>
         <p><a href='https://nursevillage.com' target='_blank' rel="noreferrer" ><strong>NurseVillage</strong></a> is a community platform for nurses, providing informations about hospitals and universities.</p>
         <ul>
           <li>Have a meeting with judges from venture capital and outsourcing cooporation.</li>
